@@ -8,6 +8,7 @@ exports.Pages = {
   OBJECT_DATA_EXAMPLE: 'OBJECT_DATA_EXAMPLE',
   FLEXGROW_EXAMPLE: 'FLEXGROW_EXAMPLE',
   RESIZE_EXAMPLE: 'RESIZE_EXAMPLE',
+  FILTER_EXAMPLE: 'FILTER_EXAMPLE',
 }
 
 exports.OtherPages = {
@@ -41,6 +42,11 @@ exports.ExamplePages = {
     title: 'Column Groups',
     description: 'Table with column groupings.',
   },
+  FILTER_EXAMPLE: {
+    location: 'example-filter.html',
+    title: 'Filterable',
+    description: 'A table that is filterable by column. In this example, by first name.',
+  }
 };
 
 exports.DOCS_DEFAULT = exports.APIPages.TABLE_API;

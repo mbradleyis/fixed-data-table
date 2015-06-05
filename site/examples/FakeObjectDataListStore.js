@@ -44,6 +44,15 @@ function getObjectAt(/*number*/ index) /*?object*/ {
   return _cache[index];
 }
 
+function getAll(){
+  if (_cache.length < SIZE){
+    for (var i = 0; i < SIZE; i++){
+      getObjectAt(i);
+    }
+  }
+  return _cache.slice();
+}
+
 function getSize() {
   return SIZE;
 }
@@ -51,6 +60,7 @@ function getSize() {
 var FakeObjectDataListStore = {
   getObjectAt: getObjectAt,
   getSize: getSize,
+  getAll: getAll,
 };
 
 module.exports = FakeObjectDataListStore;
