@@ -80,7 +80,14 @@ var ExamplesPage = React.createClass({
           <TouchExampleWrapper {...this.state}>
             <FilterExample />
           </TouchExampleWrapper>
-        )
+        );
+      case ExamplePages.SORT_EXAMPLE:
+        var SortExample = require('./SortExample');
+        return (
+          <TouchExampleWrapper {...this.state}>
+            <SortExample />
+          </TouchExampleWrapper>
+        );
     }
   },
 

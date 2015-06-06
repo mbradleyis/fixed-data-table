@@ -9,6 +9,7 @@ exports.Pages = {
   FLEXGROW_EXAMPLE: 'FLEXGROW_EXAMPLE',
   RESIZE_EXAMPLE: 'RESIZE_EXAMPLE',
   FILTER_EXAMPLE: 'FILTER_EXAMPLE',
+  SORT_EXAMPLE: 'SORT_EXAMPLE',
 }
 
 exports.OtherPages = {
@@ -45,8 +46,13 @@ exports.ExamplePages = {
   FILTER_EXAMPLE: {
     location: 'example-filter.html',
     title: 'Filterable',
-    description: 'A table that is filterable by column. In this example, by first name.',
-  }
+    description: 'A table example that is filterable by column. In this example, by first name.',
+  },
+  SORT_EXAMPLE: {
+    location: 'example-sort.html',
+    title: 'Sortable',
+    description: 'A table example that is sortable by column.'
+  },
 };
 
 exports.DOCS_DEFAULT = exports.APIPages.TABLE_API;

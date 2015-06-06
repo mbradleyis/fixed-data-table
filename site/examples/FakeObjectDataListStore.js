@@ -17,7 +17,7 @@ var _cache = [];
 
 function createFakeRowObjectData(/*number*/ index) {
   return {
-    id: 'id_' + index,
+    id: index,
     avartar: faker.image.avatar(),
     city: faker.address.city(),
     email: faker.internet.email(),
